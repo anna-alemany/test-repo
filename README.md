@@ -15,6 +15,19 @@ In your computer:
 * Initialize a local Git repo: > git init
 * Point your local repo at the remote repo in GitHub: git remote add origin https://github.com/anna-alemany/name-repo.git
 
+## Adding an existing project to GitHub
+* Create a new repository on GitHub. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub.
+* Open Terminal and change the current working directory to your local project.
+* Initialize the local directory as a Git repository.
+* Add the files in your new local repository (git add .) and commit the files that you've staged in your local repository (git commit -m "first commit").
+* At the top of your GitHub repository's Quick Setup page, click  to copy the remote repository URL.
+* In Terminal, add the URL for the remote repository where your local repository will be pushed.
+  + git remote add origin "remote repository URL"
+  + git remote -v
+* Push the changes in your local repository to GitHub.
+  + git push -u origin master
+
+
 ## Fork another user's repo
 In GitHub:
 * Fork
